@@ -1,0 +1,128 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 13855080059,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.before()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User should able to click explore page",
+        "description": "",
+        "id": "youtube-music-search;user-should-able-to-click-explore-page",
+        "after": [
+          {
+            "result": {
+              "duration": 195513167,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hook.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 277676096,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I open browser",
+            "match": {
+              "location": "SearchStep.iOpenBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 121461,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I go to youtube music page",
+            "match": {
+              "location": "SearchStep.iGoToYoutubeMusicPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1155648875,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I should be in youtube music page",
+            "match": {
+              "location": "SearchStep.iShouldBeInYoutubeMusicPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1185952755,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click explore menu",
+            "match": {
+              "location": "SearchStep.iClickExploreMenu()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2392628284,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "The explore page is opened",
+            "match": {
+              "location": "SearchStep.theExplorePageIsOpened()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1233937953,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I open \"Moods \u0026 genres\" Content Group",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Moods \u0026 genres",
+                  "offset": 8
+                }
+              ],
+              "location": "SearchStep.iOpen(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@explore"
+          }
+        ]
+      }
+    ],
+    "name": "Youtube Music Search",
+    "description": "",
+    "id": "youtube-music-search",
+    "keyword": "Feature",
+    "uri": "Search.feature"
+  }
+]
