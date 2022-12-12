@@ -70,7 +70,7 @@ Open this automation using Intellij IDEA.
 ```
 |-- test
 		|-- java
-        |-- helpers
+        			|-- helpers
 				|-- pages
 				|-- setups
 				|-- steps
