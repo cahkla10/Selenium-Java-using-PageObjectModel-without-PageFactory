@@ -2,6 +2,7 @@ package pages;
 
 import helpers.Common;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import setups.BrowserPool;
 
 import java.util.List;
@@ -14,30 +15,27 @@ public class HomePage {
     private int delay = 1000;
 
     Common common = new Common();
+
     public void clickHomeLink() throws InterruptedException {
-        BrowserPool.getBrowserInstance().findElement(By.xpath(homeLink)).click();
+        common.clickXpath(homeLink);
         common.delay(delay);
     }
 
     public void clickExploreLink() throws InterruptedException{
-        BrowserPool.getBrowserInstance().findElement(By.xpath(exploreLink)).click();
+        common.clickXpath(exploreLink);
         common.delay(delay);
     }
 
     public void clickLibraryLink() throws InterruptedException{
-        BrowserPool.getBrowserInstance().findElement(By.xpath(libraryLink)).click();
+        common.clickXpath(libraryLink);
         common.delay(delay);
     }
 
     public void clickSearchLogo(){
-//        BrowserPool.getBrowserInstance().findElement(By.linkText(searchLink)).click();
     }
 
     public void seeLogo() throws InterruptedException{
-        List logo = BrowserPool.getBrowserInstance().findElements(By.xpath(logoYMusic));
-        if(logo.size() <= 1){
-            System.out.println("Youtube Music logo already displayed.");
-        }
+        common.findXpathAndRead(logoYMusic, "Youtube Music logo already displayed.");
         common.delay(delay);
     }
 }
