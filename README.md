@@ -45,7 +45,7 @@ Install Editor Intellij Idea Community and JDK in komputer.
 
 #### Clone
 
-Clone this repository using this command `https://github.com/cahkla10/Selenium-Java-using-POM` in terminal or command prompt.
+Clone this repository using this command `git clone https://github.com/cahkla10/Selenium-Java-using-POM-without-PageFactory` in terminal or command prompt.
 
 ### Intellij IDEA Configuration
 
