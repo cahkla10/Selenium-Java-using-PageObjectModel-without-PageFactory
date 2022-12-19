@@ -2,14 +2,14 @@ package setups;
 
 import org.openqa.selenium.WebDriver;
 
-public class ChromePool {
+public class BrowserPool {
     private static WebDriver browserInstance;
 
     public static WebDriver getChromeInstance() {
-        return ChromePool.browserInstance;
+        return BrowserPool.browserInstance;
     }
 
     public void setChromeInstance(WebDriver instance) {
-        ChromePool.browserInstance = instance;
+        BrowserPool.browserInstance = instance;
     }
 }
