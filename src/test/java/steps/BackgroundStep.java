@@ -5,7 +5,7 @@ import cucumber.api.java.en.Then;
 import helpers.Common;
 import pages.LoginPage;
 
-public class BackgroundLoginStep {
+public class BackgroundStep {
     Common common = new Common();
     LoginPage loginPage = new LoginPage();
 
