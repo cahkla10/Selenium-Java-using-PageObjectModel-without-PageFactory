@@ -1,4 +1,4 @@
-# Selenium-Java-using-POM-without-PageFactory
+# Selenium-Java-using-PageOjectbModel-without-PageFactory
 
 ## 1. POM
 
