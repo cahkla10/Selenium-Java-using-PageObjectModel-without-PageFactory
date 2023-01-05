@@ -1,4 +1,4 @@
-# Selenium-Java-using-PageOjectbModel-without-PageFactory
+# Selenium-Java-using-PageObjectModel-without-PageFactory
 
 ## 1. POM
 
@@ -13,17 +13,16 @@ What is Cucumber? What is Gherkin?<br/>
 
 ## 3. Preparation
 
-| Unsur        | Item                                                         |
+| Items        | Remarks                                                         |
 | ------------ | ------------------------------------------------------------ |
 | Editor       | Intellij IDEA Community (https://www.jetbrains.com/idea/download/#section=windows) |
 | JDK          | JDK 8 (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) |
 | Web Driver   | Chrome Driver (https://chromedriver.chromium.org/downloads)<br />Firefox Driver (https://github.com/mozilla/geckodriver/releases) |
 | Browser      | Chrome latest version<br />Mozilla Firefox latest version    |
-| Dependencies | artifactId: `selenium-java`, groupId: `org.seleniumhq.selenium` <br />artifactId: `selenium-firefox-driver`, groupId: `org.seleniumhq.selenium`<br />artifactId: `selenium-safari-driver`, groupId: `org.seleniumhq.selenium`<br />artifactId: `selenium-chrome-driver`, groupId: `org.seleniumhq.selenium`<br />artifactId: `selenium-api`, groupId: `org.seleniumhq.selenium`<br />artifactId: `cucumber-junit`, groupId: `info.cukes`<br />artifactId: `cucumber-java`, groupId: `info.cukes`<br />artifactId: `cucumber-core`, groupId: `info.cukes`<br />artifactId: `gherkin`, groupId: `info.cukes`<br />artifactId: `testng`, groupId: `org.testng` <br />artifactId: `maven-clean-plugin`<br />artifactId: `maven-resources-plugin`<br />artifactId: `maven-compiler-plugin`<br />artifactId: `maven-surefire-plugin`<br />artifactId: `maven-jar-plugin`<br />artifactId: `maven-install-plugin`<br />artifactId: `maven-deploy-plugin`<br />artifactId: `maven-site-plugin`<br />artifactId: `maven-project-info-reports-plugin`|
 
 ## 4. Installation
 
-Install Editor Intellij Idea Community and JDK in komputer.
+Install Editor Intellij Idea Community and JDK.
 
 ## 5. Configuration
 
@@ -45,7 +44,7 @@ Install Editor Intellij Idea Community and JDK in komputer.
 
 #### Clone
 
-Clone this repository using this command `git clone https://github.com/cahkla10/Selenium-Java-using-POM-without-PageFactory` in terminal or command prompt.
+Clone this repository through terminal or command prompt.
 
 ### Intellij IDEA Configuration
 
@@ -76,6 +75,7 @@ Open this automation using Intellij IDEA.
 				|-- steps
 		|-- resources
 				|-- features
+				|-- webdriver
 ```
 
 - `helpers` package for Runner class or other required class
