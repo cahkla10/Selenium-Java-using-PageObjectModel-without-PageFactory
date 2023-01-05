@@ -10,7 +10,7 @@
       Given user input username "standard_user"
       And user input password "secret_sauce"
       And user click Login button
-      Then user redirected to Product page
+      Then user redirected to "PRODUCTS" page
 
     @TC002
     Scenario Outline: TC002 - User login with incorrect credentials

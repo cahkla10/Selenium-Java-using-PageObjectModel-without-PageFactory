@@ -9,47 +9,38 @@ public class LoginPage {
     private String loginBtn = "login-button";
     private String botImg = "//*[@class=\"bot_column\"]";
     private String errorMessage = "//*[@data-test=\"error\"]";
-    private int delay = 500;
 
     Common common = new Common();
 
-    public void seeLogoImg() throws InterruptedException {
-        common.delay(delay);
+    public void seeLogoImg() {
         common.findXpathAndRead(logoImg, "Logo image is displayed!");
     }
 
-    public void seeBotImg() throws InterruptedException{
-        common.delay(delay);
+    public void seeBotImg() {
         common.findXpathAndRead(botImg, "Bot image is displayed!");
     }
 
-    public void clearUsernameField() throws InterruptedException{
-        common.delay(delay);
+    public void clearUsernameField() {
         common.clearId(usernameField);
     }
 
-    public void inputUsernameField(String username) throws InterruptedException{
-        common.delay(delay);
+    public void inputUsernameField(String username) {
         common.sendKeysId(usernameField, username);
     }
 
-    public void clearPasswordField() throws InterruptedException{
-        common.delay(delay);
+    public void clearPasswordField() {
         common.clearId(passwordField);
     }
 
-    public void inputPasswordField(String password) throws InterruptedException{
-        common.delay(delay);
+    public void inputPasswordField(String password) {
         common.sendKeysId(passwordField, password);
     }
 
-    public void clickLoginBtn() throws InterruptedException{
-        common.delay(delay);
+    public void clickLoginBtn() {
         common.clickId(loginBtn);
     }
 
-    public void verifyWarningMessage(String message) throws InterruptedException{
-        common.delay(delay);
+    public void verifyWarningMessage(String message) {
         common.verifyXpathText(errorMessage, message);
     }
 }

@@ -27,9 +27,9 @@ public class LoginStep {
         loginPage.clickLoginBtn();
     }
 
-    @Then("^user redirected to Product page$")
-    public void userRedirectedToProductPage() throws Throwable {
-        productsPage.readTitlePage();
+    @Then("^user redirected to \"([^\"]*)\" page$")
+    public void userRedirectedToProductPage(String exTitle) throws Throwable {
+        productsPage.readTitlePage(exTitle);
     }
 
     @Then("^warning message appear \"([^\"]*)\"$")

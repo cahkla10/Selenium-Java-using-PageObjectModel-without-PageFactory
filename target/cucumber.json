@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 696499100,
+              "duration": 1255064000,
               "status": "passed"
             },
             "line": 6,
@@ -29,7 +29,7 @@
           },
           {
             "result": {
-              "duration": 515491400,
+              "duration": 92194800,
               "status": "passed"
             },
             "line": 7,
@@ -45,138 +45,7 @@
         "before": [
           {
             "result": {
-              "duration": 2935657800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.before()"
-            }
-          }
-        ],
-        "line": 9,
-        "name": "TC001 - User login with correct credential",
-        "description": "",
-        "id": "login-scenarios;tc001---user-login-with-correct-credential",
-        "after": [
-          {
-            "result": {
-              "duration": 31362800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.after()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 1107468300,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user input username \"standard_user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "standard_user",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputUsername(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 1091597000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user input password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "secret_sauce",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputPassword(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 582539800,
-              "status": "passed"
-            },
-            "line": 12,
-            "name": "user click Login button",
-            "match": {
-              "location": "LoginStep.userClickLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 523470300,
-              "status": "passed"
-            },
-            "line": 13,
-            "name": "user redirected to Product page",
-            "match": {
-              "location": "LoginStep.userRedirectedToProductPage()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User open the URL",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 539078700,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user type \"https://www.saucedemo.com/\" in address bar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://www.saucedemo.com/",
-                  "offset": 11
-                }
-              ],
-              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 513571700,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Sauce Demo web will displayed",
-            "match": {
-              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1032544200,
+              "duration": 2934723300,
               "status": "passed"
             },
             "match": {
@@ -191,7 +60,7 @@
         "after": [
           {
             "result": {
-              "duration": 30070000,
+              "duration": 629477800,
               "status": "passed"
             },
             "match": {
@@ -204,7 +73,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1074050300,
+              "duration": 208191300,
               "status": "passed"
             },
             "line": 17,
@@ -225,7 +94,7 @@
           },
           {
             "result": {
-              "duration": 1071099000,
+              "duration": 262897700,
               "status": "passed"
             },
             "line": 18,
@@ -246,7 +115,7 @@
           },
           {
             "result": {
-              "duration": 552339200,
+              "duration": 80268600,
               "status": "passed"
             },
             "line": 19,
@@ -258,7 +127,7 @@
           },
           {
             "result": {
-              "duration": 524487000,
+              "duration": 48663700,
               "status": "passed"
             },
             "line": 20,
@@ -298,7 +167,7 @@
         "steps": [
           {
             "result": {
-              "duration": 607269300,
+              "duration": 1034846300,
               "status": "passed"
             },
             "line": 6,
@@ -316,7 +185,7 @@
           },
           {
             "result": {
-              "duration": 511345100,
+              "duration": 54882200,
               "status": "passed"
             },
             "line": 7,
@@ -332,7 +201,7 @@
         "before": [
           {
             "result": {
-              "duration": 1041905400,
+              "duration": 1902013300,
               "status": "passed"
             },
             "match": {
@@ -347,7 +216,7 @@
         "after": [
           {
             "result": {
-              "duration": 33713700,
+              "duration": 657857000,
               "status": "passed"
             },
             "match": {
@@ -360,7 +229,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1093819600,
+              "duration": 157632500,
               "status": "passed"
             },
             "line": 17,
@@ -381,7 +250,7 @@
           },
           {
             "result": {
-              "duration": 1071282700,
+              "duration": 135794000,
               "status": "passed"
             },
             "line": 18,
@@ -402,7 +271,7 @@
           },
           {
             "result": {
-              "duration": 545610400,
+              "duration": 91552300,
               "status": "passed"
             },
             "line": 19,
@@ -414,7 +283,7 @@
           },
           {
             "result": {
-              "duration": 527958500,
+              "duration": 76060600,
               "status": "passed"
             },
             "line": 20,
@@ -454,7 +323,7 @@
         "steps": [
           {
             "result": {
-              "duration": 456453500,
+              "duration": 1297189300,
               "status": "passed"
             },
             "line": 6,
@@ -472,7 +341,7 @@
           },
           {
             "result": {
-              "duration": 512675900,
+              "duration": 52926400,
               "status": "passed"
             },
             "line": 7,
@@ -488,7 +357,7 @@
         "before": [
           {
             "result": {
-              "duration": 1050276600,
+              "duration": 1858354900,
               "status": "passed"
             },
             "match": {
@@ -503,7 +372,7 @@
         "after": [
           {
             "result": {
-              "duration": 28074100,
+              "duration": 621162600,
               "status": "passed"
             },
             "match": {
@@ -516,7 +385,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1071411100,
+              "duration": 214461300,
               "status": "passed"
             },
             "line": 17,
@@ -537,7 +406,7 @@
           },
           {
             "result": {
-              "duration": 1102278900,
+              "duration": 301722600,
               "status": "passed"
             },
             "line": 18,
@@ -558,7 +427,7 @@
           },
           {
             "result": {
-              "duration": 542887800,
+              "duration": 147552800,
               "status": "passed"
             },
             "line": 19,
@@ -570,7 +439,7 @@
           },
           {
             "result": {
-              "duration": 523834600,
+              "duration": 84112400,
               "status": "passed"
             },
             "line": 20,
@@ -610,7 +479,7 @@
         "steps": [
           {
             "result": {
-              "duration": 615689500,
+              "duration": 1257960500,
               "status": "passed"
             },
             "line": 6,
@@ -628,7 +497,7 @@
           },
           {
             "result": {
-              "duration": 512063200,
+              "duration": 54637200,
               "status": "passed"
             },
             "line": 7,
@@ -644,7 +513,7 @@
         "before": [
           {
             "result": {
-              "duration": 1022576300,
+              "duration": 1584929800,
               "status": "passed"
             },
             "match": {
@@ -659,7 +528,7 @@
         "after": [
           {
             "result": {
-              "duration": 30702400,
+              "duration": 619730600,
               "status": "passed"
             },
             "match": {
@@ -672,7 +541,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1095907800,
+              "duration": 230827000,
               "status": "passed"
             },
             "line": 17,
@@ -693,7 +562,7 @@
           },
           {
             "result": {
-              "duration": 1092055000,
+              "duration": 291940400,
               "status": "passed"
             },
             "line": 18,
@@ -714,7 +583,7 @@
           },
           {
             "result": {
-              "duration": 545216200,
+              "duration": 145752800,
               "status": "passed"
             },
             "line": 19,
@@ -726,7 +595,7 @@
           },
           {
             "result": {
-              "duration": 527723400,
+              "duration": 79630200,
               "status": "passed"
             },
             "line": 20,
@@ -767,802 +636,6 @@
       {
         "line": 1,
         "name": "@Login"
-      }
-    ]
-  },
-  {
-    "line": 2,
-    "elements": [
-      {
-        "line": 5,
-        "name": "User already login",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 619170500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user type \"https://www.saucedemo.com/\" in address bar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://www.saucedemo.com/",
-                  "offset": 11
-                }
-              ],
-              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 512065100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Sauce Demo web will displayed",
-            "match": {
-              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1088308900,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user input username \"standard_user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "standard_user",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputUsername(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1087486000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user input password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "secret_sauce",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputPassword(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 598788300,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user click Login button",
-            "match": {
-              "location": "LoginStep.userClickLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 525590500,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user redirected to Product page",
-            "match": {
-              "location": "LoginStep.userRedirectedToProductPage()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1040286400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.before()"
-            }
-          }
-        ],
-        "line": 20,
-        "name": "TC003 - User want to sort products",
-        "description": "",
-        "id": "product-scenarios;tc003---user-want-to-sort-products;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 31373400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.after()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 543937700,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click sort drop down",
-            "match": {
-              "location": "ProductsStep.user_click_sort_drop_down()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 528892500,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user select sort \"az\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "az",
-                  "offset": 18
-                }
-              ],
-              "location": "ProductsStep.user_select_sort(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 500249400,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "product will be sorted \"A to Z\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "A to Z",
-                  "offset": 24
-                }
-              ],
-              "location": "ProductsStep.product_will_be_sorted(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 13,
-            "name": "@TC003"
-          },
-          {
-            "line": 1,
-            "name": "@Product"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User already login",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 470138800,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user type \"https://www.saucedemo.com/\" in address bar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://www.saucedemo.com/",
-                  "offset": 11
-                }
-              ],
-              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 511113100,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Sauce Demo web will displayed",
-            "match": {
-              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1090886800,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user input username \"standard_user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "standard_user",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputUsername(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1095322100,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user input password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "secret_sauce",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputPassword(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 584734100,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user click Login button",
-            "match": {
-              "location": "LoginStep.userClickLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 523047000,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user redirected to Product page",
-            "match": {
-              "location": "LoginStep.userRedirectedToProductPage()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1048515600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.before()"
-            }
-          }
-        ],
-        "line": 21,
-        "name": "TC003 - User want to sort products",
-        "description": "",
-        "id": "product-scenarios;tc003---user-want-to-sort-products;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 36497700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.after()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 539274400,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click sort drop down",
-            "match": {
-              "location": "ProductsStep.user_click_sort_drop_down()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 534789800,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user select sort \"za\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "za",
-                  "offset": 18
-                }
-              ],
-              "location": "ProductsStep.user_select_sort(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 500745400,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "product will be sorted \"Z to A\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Z to A",
-                  "offset": 24
-                }
-              ],
-              "location": "ProductsStep.product_will_be_sorted(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 13,
-            "name": "@TC003"
-          },
-          {
-            "line": 1,
-            "name": "@Product"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User already login",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 635299300,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user type \"https://www.saucedemo.com/\" in address bar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://www.saucedemo.com/",
-                  "offset": 11
-                }
-              ],
-              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 512048800,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Sauce Demo web will displayed",
-            "match": {
-              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1094081000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user input username \"standard_user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "standard_user",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputUsername(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1095862300,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user input password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "secret_sauce",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputPassword(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 595430900,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user click Login button",
-            "match": {
-              "location": "LoginStep.userClickLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 523492300,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user redirected to Product page",
-            "match": {
-              "location": "LoginStep.userRedirectedToProductPage()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1034262400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.before()"
-            }
-          }
-        ],
-        "line": 22,
-        "name": "TC003 - User want to sort products",
-        "description": "",
-        "id": "product-scenarios;tc003---user-want-to-sort-products;;4",
-        "after": [
-          {
-            "result": {
-              "duration": 31010000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.after()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 539946500,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click sort drop down",
-            "match": {
-              "location": "ProductsStep.user_click_sort_drop_down()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 533984600,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user select sort \"lohi\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "lohi",
-                  "offset": 18
-                }
-              ],
-              "location": "ProductsStep.user_select_sort(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 499949700,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "product will be sorted \"Price Low to High\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price Low to High",
-                  "offset": 24
-                }
-              ],
-              "location": "ProductsStep.product_will_be_sorted(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 13,
-            "name": "@TC003"
-          },
-          {
-            "line": 1,
-            "name": "@Product"
-          }
-        ]
-      },
-      {
-        "line": 5,
-        "name": "User already login",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 606586000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user type \"https://www.saucedemo.com/\" in address bar",
-            "match": {
-              "arguments": [
-                {
-                  "val": "https://www.saucedemo.com/",
-                  "offset": 11
-                }
-              ],
-              "location": "BackgroundLoginStep.userTypeInAddressBar(String)"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 539426400,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Sauce Demo web will displayed",
-            "match": {
-              "location": "BackgroundLoginStep.sauceDemoWebWillDisplayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1096526000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user input username \"standard_user\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "standard_user",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputUsername(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1079791200,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user input password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "secret_sauce",
-                  "offset": 21
-                }
-              ],
-              "location": "LoginStep.userInputPassword(String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 587347900,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "user click Login button",
-            "match": {
-              "location": "LoginStep.userClickLoginButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 522885600,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user redirected to Product page",
-            "match": {
-              "location": "LoginStep.userRedirectedToProductPage()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 1021395300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.before()"
-            }
-          }
-        ],
-        "line": 23,
-        "name": "TC003 - User want to sort products",
-        "description": "",
-        "id": "product-scenarios;tc003---user-want-to-sort-products;;5",
-        "after": [
-          {
-            "result": {
-              "duration": 28896000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Hook.after()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 542733900,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user click sort drop down",
-            "match": {
-              "location": "ProductsStep.user_click_sort_drop_down()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 540611000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user select sort \"hilo\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "hilo",
-                  "offset": 18
-                }
-              ],
-              "location": "ProductsStep.user_select_sort(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 499301900,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "product will be sorted \"Price High to Low\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Price High to Low",
-                  "offset": 24
-                }
-              ],
-              "location": "ProductsStep.product_will_be_sorted(String)"
-            },
-            "matchedColumns": [
-              1
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 13,
-            "name": "@TC003"
-          },
-          {
-            "line": 1,
-            "name": "@Product"
-          }
-        ]
-      }
-    ],
-    "name": "Product Scenarios",
-    "description": "This cases is for Product feature which is every case will started with Background first.",
-    "id": "product-scenarios",
-    "keyword": "Feature",
-    "uri": "Product.feature",
-    "tags": [
-      {
-        "line": 1,
-        "name": "@Product"
       }
     ]
   }

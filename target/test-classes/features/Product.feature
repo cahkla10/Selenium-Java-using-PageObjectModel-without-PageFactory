@@ -8,7 +8,7 @@ Feature: Product Scenarios
     When user input username "standard_user"
     And user input password "secret_sauce"
     And user click Login button
-    Then user redirected to Product page
+    Then user redirected to "PRODUCTS" page
 
   @TC003
   Scenario Outline: TC003 - User want to sort products

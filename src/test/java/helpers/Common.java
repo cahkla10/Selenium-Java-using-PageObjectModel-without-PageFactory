@@ -2,59 +2,62 @@ package helpers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import setups.ChromePool;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import setups.BrowserSetup;
 
+import java.time.Duration;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
+
 public class Common {
-    public void delay(int delay) throws InterruptedException {
-        Thread.sleep(delay);
-    }
+    WebDriverWait wait = new WebDriverWait(BrowserSetup.getWebDriver(), Duration.ofSeconds(GlobalVariables.TIMEOUT));
 
     public void openUrl(String url){
-        ChromePool.getChromeInstance().navigate().to(url);
+        BrowserSetup.getWebDriver().navigate().to(url);
     }
 
     public void clearId(String element){
-        ChromePool.getChromeInstance().findElement(By.id(element)).clear();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(element))).clear();
     }
 
     public void clearXpath(String element){
-        ChromePool.getChromeInstance().findElement(By.xpath(element)).clear();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(element))).clear();
     }
 
     public void clickId(String element){
-        ChromePool.getChromeInstance().findElement(By.id(element)).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(element))).click();
     }
 
     public void clickXpath(String element){
-        ChromePool.getChromeInstance().findElement(By.xpath(element)).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(element))).click();
     }
 
     public void sendKeysId(String element, String text){
-        ChromePool.getChromeInstance().findElement(By.id(element)).sendKeys(text);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(element))).sendKeys(text);
     }
 
     public void sendKeysXpath(String element, String text){
-        ChromePool.getChromeInstance().findElement(By.xpath(element)).sendKeys(text);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(element))).sendKeys(text);
     }
 
     public void findIdAndRead(String element, String outputText){
-        List<WebElement> list = ChromePool.getChromeInstance().findElements(By.id(element));
+        List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(element)));
         if(list.size() >= 1){
             System.out.println(outputText);
         }
     }
 
     public void findXpathAndRead(String element, String outputText){
-        List<WebElement> list = ChromePool.getChromeInstance().findElements(By.xpath(element));
+        List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(element)));
         if(list.size() >= 1){
             System.out.println(outputText);
         }
     }
 
     public void findIdAndClick(String element, String text){
-        List<WebElement> list = ChromePool.getChromeInstance().findElements(By.id(element));
+        List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(element)));
         for(WebElement aList : list){
             if(aList.getText().contains(text)){
                 aList.click();
@@ -64,7 +67,7 @@ public class Common {
     }
 
     public void findXpathAndClick(String element, String text){
-        List<WebElement> list = ChromePool.getChromeInstance().findElements(By.xpath(element));
+        List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(element)));
         for(WebElement aList : list){
             if(aList.getText().contains(text)){
                 aList.click();
@@ -73,11 +76,17 @@ public class Common {
         }
     }
 
-    public void verifyXpathText(String element, String expected){
-        List<WebElement> list = ChromePool.getChromeInstance().findElements(By.xpath(element));
+    public void verifyIdText(String element, String expected){
+        List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id(element)));
         if(list.size() >= 1){
-            System.out.println("Expected: " + expected);
-            System.out.println("Result: " + list.get(0).getText());
+            assertEquals(expected,list.get(0).getText());
+        }
+    }
+
+    public void verifyXpathText(String element, String expected){
+        List<WebElement> list = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath(element)));
+        if(list.size() >= 1){
+            assertEquals(expected,list.get(0).getText());
         }
     }
 }

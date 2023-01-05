@@ -3,8 +3,6 @@ pages\LoginPage.class
 steps\BackgroundLoginStep.class
 helpers\TestRunner.class
 steps\ProductsStep.class
-setups\ChromeSetup.class
 steps\LoginStep.class
 setups\Hook.class
 helpers\Common.class
-setups\ChromePool.class

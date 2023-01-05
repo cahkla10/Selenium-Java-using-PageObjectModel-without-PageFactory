@@ -1,21 +1,45 @@
 package setups;
 
+import helpers.GlobalVariables;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 
-public class BrowserSetup extends BrowserPool {
-    ChromeDriver chrome;
+public class BrowserSetup {
+    private static WebDriver webDriver;
 
-    protected void startChrome() {
-//        System.setProperty("webdriver.chrome.driver","src/test/resources/chromedriver");
-        System.setProperty("webdriver.chrome.driver","D:\\OTOMESEN\\saucedemo\\src\\test\\resources\\chromedriver.exe");
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
-        chrome = new ChromeDriver(options);
-        setChromeInstance(chrome);
+    public static WebDriver getWebDriver(){
+        return webDriver;
     }
 
-    protected void stopChrome() {
-        chrome.close();
+    public static void startWebDriver() {
+        switch (GlobalVariables.BROWSER.toLowerCase()){
+            case "chrome":
+                System.setProperty("webdriver.chrome.driver", GlobalVariables.USERDIR + "/src/test/resources/webdriver/chromedriver.exe");
+                ChromeOptions chOptions = new ChromeOptions();
+                chOptions.addArguments("--headless");
+                webDriver = new ChromeDriver();
+                System.out.println("Browser: " + System.getProperty("browser"));
+                break;
+            case "edge":
+                System.setProperty("webdriver.edge.driver", GlobalVariables.USERDIR + "/src/test/resources/webdriver/msedgedriver.exe");
+                EdgeOptions edOptions = new EdgeOptions();
+                edOptions.addArguments("--headless");
+                webDriver = new EdgeDriver(edOptions);
+                System.out.println("Browser: " + System.getProperty("browser"));
+                break;
+            case "firefox":
+                System.setProperty("webdriver.gecko.driver", GlobalVariables.USERDIR + "/src/test/resources/webdriver/geckodriver.exe");
+                FirefoxOptions frOptions = new FirefoxOptions();
+                frOptions.addPreference("acceptInsecureCerts", true);
+                frOptions.addArguments("--headless");
+                webDriver = new FirefoxDriver();
+                System.out.println("Browser: " + System.getProperty("browser"));
+                break;
+        }
     }
 }

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: helpers.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 75, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 57.764 s - in helpers.TestRunner
+Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.92 s - in helpers.TestRunner

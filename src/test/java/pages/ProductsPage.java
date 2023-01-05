@@ -2,7 +2,7 @@ package pages;
 
 import helpers.Common;
 import org.openqa.selenium.By;
-import setups.ChromePool;
+import setups.BrowserSetup;
 
 public class ProductsPage {
     private String titlePage = "//*[@class=\"title\"]";
@@ -13,32 +13,26 @@ public class ProductsPage {
     private String lohiSort = "//*[@value=\"lohi\"]";
     private String hiloSort = "//*[@value=\"hilo\"]";
     private String logoutMenu = "logout_sidebar_link";
-    private int delay = 500;
 
     Common common = new Common();
 
-    public void readTitlePage() throws InterruptedException{
-       common.delay(delay);
-       common.verifyXpathText(titlePage, "PRODUCTS");
+    public void readTitlePage(String exTitle) {
+       common.verifyXpathText(titlePage, exTitle);
     }
 
-    public void clickBurgerMenu() throws InterruptedException{
-        common.delay(delay);
+    public void clickBurgerMenu() {
         common.clickId(burgerMenu);
     }
 
-    public void clickSortDropDown() throws InterruptedException{
-        common.delay(delay);
+    public void clickSortDropDown() {
         common.clickXpath(sortDropDown);
     }
 
-    public void selectSort(String sort) throws InterruptedException{
-        common.delay(delay);
-        ChromePool.getChromeInstance().findElement(By.xpath("//*[@value=\"" + sort + "\"]")).click();
+    public void selectSort(String sort) {
+        BrowserSetup.getWebDriver().findElement(By.xpath("//*[@value=\"" + sort + "\"]")).click();
     }
 
-    public void readSort(String desc) throws InterruptedException{
-        common.delay(delay);
+    public void readSort(String desc) {
         System.out.println("Sort: " + desc);
     }
 }
