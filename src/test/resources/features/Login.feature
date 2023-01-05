@@ -5,7 +5,8 @@
   Background: User open the URL
     Given user type "https://www.saucedemo.com/" in address bar
     Then Sauce Demo web will displayed
-
+    
+    @TC001
     Scenario: TC001 - User login with correct credential
       Given user input username "standard_user"
       And user input password "secret_sauce"
