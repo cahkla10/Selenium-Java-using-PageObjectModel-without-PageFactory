@@ -9,7 +9,7 @@ This automation created using POM design pattern. What is POM? POM stands for Pa
 Then for Scenario scripting, we will use Cucumber and Gherkin.<br/>
 What is Cucumber? What is Gherkin?<br/>
 **Cucumber** is a tool that supports BDD *(Behavior-Driven Development)*.<br/>
-**Gherkin** is a set of grammar rules that makes plain text structured enough to be understood by Cucumber. Scenario scripts are written using Gherkin.<br/><br/>Referensi: https://docs.cucumber.io/docs/guides/overview/
+**Gherkin** is a set of grammar rules that makes plain text structured enough to be understood by Cucumber. Scenario scripts are written using Gherkin.<br/><br/>Ref: https://docs.cucumber.io/docs/guides/overview/
 
 ## 3. Preparation
 
