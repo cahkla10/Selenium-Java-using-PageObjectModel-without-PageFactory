@@ -18,7 +18,7 @@ What is Cucumber? What is Gherkin?<br/>
 | Editor       | Intellij IDEA Community (https://www.jetbrains.com/idea/download/#section=windows) |
 | JDK          | JDK 8 (https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) |
 | Web Driver   | Chrome Driver (https://chromedriver.chromium.org/downloads)<br />Firefox Driver (https://github.com/mozilla/geckodriver/releases) |
-| Browser      | Chrome latest version<br />Mozilla Firefox latest version    |
+| Browser      | Chrome/Mozilla Firefox/Edge latest version   |
 
 ## 4. Installation
 
