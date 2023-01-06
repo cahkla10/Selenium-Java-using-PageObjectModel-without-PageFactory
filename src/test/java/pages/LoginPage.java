@@ -1,46 +1,47 @@
 package pages;
 
 import helpers.Common;
+import org.openqa.selenium.By;
 
 public class LoginPage {
-    private String logoImg = "//*[@class=\"login_logo\"]";
-    private String usernameField = "user-name";
-    private String passwordField = "password";
-    private String loginBtn = "login-button";
-    private String botImg = "//*[@class=\"bot_column\"]";
-    private String errorMessage = "//*[@data-test=\"error\"]";
+    private By logoImg = By.xpath("//*[@class='login_logo']");
+    private By usernameField = By.id("user-name");
+    private By passwordField = By.id("password");
+    private By loginBtn = By.id("login-button");
+    private By botImg = By.xpath("//*[@class='bot_column']");
+    private By errorMessage = By.xpath("//*[@data-test='error']");
 
     Common common = new Common();
 
     public void seeLogoImg() {
-        common.findXpathAndRead(logoImg, "Logo image is displayed!");
+        common.findAndRead(logoImg, "Logo image is displayed!");
     }
 
     public void seeBotImg() {
-        common.findXpathAndRead(botImg, "Bot image is displayed!");
+        common.findAndRead(botImg, "Bot image is displayed!");
     }
 
     public void clearUsernameField() {
-        common.clearId(usernameField);
+        common.clear(usernameField);
     }
 
     public void inputUsernameField(String username) {
-        common.sendKeysId(usernameField, username);
+        common.sendKeys(usernameField, username);
     }
 
     public void clearPasswordField() {
-        common.clearId(passwordField);
+        common.clear(passwordField);
     }
 
     public void inputPasswordField(String password) {
-        common.sendKeysId(passwordField, password);
+        common.sendKeys(passwordField, password);
     }
 
     public void clickLoginBtn() {
-        common.clickId(loginBtn);
+        common.click(loginBtn);
     }
 
     public void verifyWarningMessage(String message) {
-        common.verifyXpathText(errorMessage, message);
+        common.verifyText(errorMessage, message);
     }
 }
