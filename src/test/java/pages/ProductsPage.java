@@ -5,27 +5,27 @@ import org.openqa.selenium.By;
 import setups.BrowserSetup;
 
 public class ProductsPage {
-    private String titlePage = "//*[@class=\"title\"]";
-    private String burgerMenu = "react-burger-menu-btn";
-    private String sortDropDown = "//*[@class=\"product_sort_container\"]";
-    private String azSort = "//*[@value=\"az\"]";
-    private String zaSort = "//*[@value=\"za\"]";
-    private String lohiSort = "//*[@value=\"lohi\"]";
-    private String hiloSort = "//*[@value=\"hilo\"]";
-    private String logoutMenu = "logout_sidebar_link";
+    private By titlePage = By.xpath("//*[@class='title']");
+    private By burgerMenu = By.id("react-burger-menu-btn");
+    private By sortDropDown = By.xpath("//*[@class='product_sort_container']");
+    private By azSort = By.xpath("//*[@value='az']");
+    private By zaSort = By.xpath("//*[@value='za']");
+    private By lohiSort = By.xpath("//*[@value='lohi']");
+    private By hiloSort = By.xpath("//*[@value='hilo']");
+    private By logoutMenu = By.id("logout_sidebar_link");
 
     Common common = new Common();
 
     public void readTitlePage(String exTitle) {
-       common.verifyXpathText(titlePage, exTitle);
+       common.verifyText(titlePage, exTitle);
     }
 
     public void clickBurgerMenu() {
-        common.clickId(burgerMenu);
+        common.click(burgerMenu);
     }
 
     public void clickSortDropDown() {
-        common.clickXpath(sortDropDown);
+        common.click(sortDropDown);
     }
 
     public void selectSort(String sort) {
